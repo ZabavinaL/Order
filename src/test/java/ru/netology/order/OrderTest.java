@@ -15,6 +15,9 @@ public class OrderTest {
         $("[data-test-id = phone] input").setValue("+79017007729");
         $("[data-test-id = agreement]").click();
         $("[type = button]").click();
-        $("[data-test-id = order-success]").shouldHave(exactText("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время."));
+        $("[data-test-id = order-success]")
+                .shouldHave(exactText("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время."));
+
+
     }
 }
